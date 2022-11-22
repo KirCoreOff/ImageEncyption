@@ -1,4 +1,18 @@
+default:
+  tags:
+    - dmosk
+
+stages:
+  - test
+  - sonar-scan
+test:
+  stage: test
+  script: echo $CI_PROJECT_DIR/
+
 sonarqube-check:
+  stage: sonar-scan
+  tags:
+    - Encrypt
   image:
     name: sonarsource/sonar-scanner-cli:latest
     entrypoint: [""]
