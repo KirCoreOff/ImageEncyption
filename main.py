@@ -86,7 +86,8 @@ def getbytes(bits):
 
 def main():
     img = Image.open("image.jpg")
-    msg = input("Enter message: ")
+    # msg = input("Enter message: ")
+    msg = "qerwqeqweqw"
     info = encrypt(msg, img)
     if info == 1:
         print("The message was successfully encrypted into an image encryptedImage.png!")
