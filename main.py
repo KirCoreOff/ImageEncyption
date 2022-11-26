@@ -89,7 +89,7 @@ def main():
     msg = input("Enter message: ")
     info = encrypt(msg, img)
     if info == 1:
-        print("The message was successfully encrypted into an image encryptedImage.png")
+        print("The message was successfully encrypted into an image encryptedImage.png!")
     else:
         print("Oops! Something went wrong!!!")
 
